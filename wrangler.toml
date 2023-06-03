@@ -1,3 +1,4 @@
 name = "github-workflow"
+account_id = "e27fb666f8e55dbf3d982e6a3ec445b2"
 main = "src/index.ts"
 compatibility_date = "2023-04-24"
