@@ -9,7 +9,9 @@ jobs:
   deploy:
     name: Deploy
     steps:
-      uses: cloudflare/wrangler-action@2.0.0
-      with:
-        apiKey: ${{ secrets.CF_API_KEY }}
-        accountId: ${{ secrets.CF_ACCOUNT_ID }}
+      - uses: actions/checkout@v2
+      - name: Publish
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiKey: ${{ secrets.CF_API_KEY }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
